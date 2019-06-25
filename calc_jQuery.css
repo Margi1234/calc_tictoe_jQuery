@@ -1,0 +1,92 @@
+body html{
+    margin: 0;
+    padding: 0;
+}
+.button{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    margin: 2px;
+    background-color: white;
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.calcpos{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+.calc-card{
+    height: 400px;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 5px 10px 18px #888888;
+}
+.bg{
+    background-color: #DFDFDF;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.output{
+    padding-top: 57px;
+    margin:0px 5px;
+    display: flex;
+    flex: 1;
+    
+}
+.output2{
+    height: 30px;
+    padding-top: 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    
+}
+.answer{
+    height: 50px;
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+.form-sty{
+    margin-right: 13px;
+    padding-top: 9px;
+    display: flex;
+    flex: 1;
+    margin-bottom: 0px;
+}
+.placeholder-message{
+    display: flex;
+    flex:1;
+    text-align: right;
+    color: #DFDFDF !important;
+    border: 1px solid white;
+    outline: none;
+}
+.placeholder-message1{
+   font-weight: bold;
+    color: black !important;
+    font-size: 30px;
+    width: 100%;
+}
+.button1{
+    color: grey;
+    font-weight: normal;
+}
+.button2{
+    color: orangered;
+}

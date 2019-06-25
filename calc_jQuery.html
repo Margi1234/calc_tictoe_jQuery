@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link href="calc_jQuery.css" rel="stylesheet" type="text/css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container bg">
+        <div class="calc-card">
+            <form class="output" name="form" id="form">
+                    <div class="form-group form-sty">
+                        <input type="text"class="placeholder-message textview"name="textview" id="textview">
+                    </div>
+            </form>
+            <form class="output output2" name="form2" id ="form2">
+                            <div class="form-group form-sty">
+                                <input type="text"class="placeholder-message placeholder-message1 textview"name="textview2" id="textview2">
+                            </div>
+            </form>
+            
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="AC"onclick="clean()"></td>
+                    <td><input class="button" type="button" value="+-"onclick="insert(1)"></td>
+                    <td><input class="button" type="button" value="%"onclick="insert('%')"></td>
+                    <td><input class="button" type="button" value="/"onclick="insert('/')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button button1" type="button" value="7"onclick="insert(7)"></td>
+                    <td><input class="button button1" type="button" value="8"onclick="insert(8)"></td>
+                    <td><input class="button button1" type="button" value="9"onclick="insert(9)"></td>
+                    <td><input class="button " type="button" value="x"onclick="insert('*')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button button1" type="button" value="4"onclick="insert(4)"></td>
+                    <td><input class="button button1" type="button" value="5"onclick="insert(5)"></td>
+                    <td><input class="button button1" type="button" value="6"onclick="insert(6)"></td>
+                    <td><input class="button " type="button" value="-"onclick="insert('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button button1" type="button" value="1" onclick="insert(1)"></td>
+                    <td><input class="button button1" type="button" value="2" onclick="insert(2)"></td>
+                    <td><input class="button button1" type="button" value="3" onclick="insert(3)"></td>
+                    <td><input class="button " type="button" value="+" onclick="insert('+')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button button1" type="button" value="0" onclick="insert(0)"></td>
+                    <td><input class="button button1" type="button" value="." onclick="insert('.')"></td>
+                    <td><input class="button button1" type="button" value="<" onclick="back()"></td>
+                    <td><input class="button button2" type="button" value="=" onclick="equal()"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calc_jQuery.js"></script>
+</body>
+</html>
